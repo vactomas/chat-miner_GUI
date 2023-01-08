@@ -55,7 +55,7 @@ def make_window(theme):
             ),
             sg.Checkbox(
                 "Radarchart",
-                default=True,
+                default=False,
                 key="-RADARCHART-",
             ),
         ],
