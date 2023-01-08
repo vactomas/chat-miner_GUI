@@ -1,0 +1,22 @@
+chat-miner
+build
+dist
+plots
+chat
+chat_miner.spec
+lib/__pycache__/__init__.cpython-311.pyc
+lib/__pycache__/choice_maker.cpython-311 (conflicted copy 2023-01-07 094347).pyc
+lib/__pycache__/choice_maker.cpython-311.pyc
+lib/__pycache__/choose_colour.cpython-311.pyc
+lib/__pycache__/choose_parser.cpython-311.pyc
+lib/__pycache__/folder_prep.cpython-311.pyc
+lib/__pycache__/gui.cpython-311 (conflicted copy 2023-01-07 094348).pyc
+lib/__pycache__/gui.cpython-311.pyc
+lib/__pycache__/plot.cpython-311 (conflicted copy 2023-01-07 095849).pyc
+lib/__pycache__/plot.cpython-311.pyc
+lib/__pycache__/STOPWORDS.cpython-311.pyc
+chatminer/__pycache__/__init__.cpython-311.pyc
+chatminer/__pycache__/chatparsers.cpython-311.pyc
+chatminer/__pycache__/visualizations.cpython-311.pyc
+lib/gui_test.py
+lib/main.py

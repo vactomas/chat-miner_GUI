@@ -1,0 +1,3 @@
+[submodule "chatminer"]
+	path = chatminer
+	url = https://github.com/joweich/chat-miner.git
