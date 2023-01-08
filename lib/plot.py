@@ -71,6 +71,15 @@ def plot_radarchart(
     colour,
 ):
 
+    vis.radar_factory(
+        7,
+        frame="polygon",
+    )
+    vis.radar(
+        parser.df,
+        ax=None,
+    )
+
     fig, ax = plt.subplots(
         figsize=(7, 3),
         subplot_kw=dict(projection="radar"),
