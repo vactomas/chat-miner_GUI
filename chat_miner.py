@@ -36,7 +36,7 @@ def main():
 
                 parser = values["-MESSENGER-"]
                 file = values["-CHAT_EXPORT_FILE-"]
-                filename = "export"
+                filename = str(values["-GRAPH_FILE_NAME-"])
                 year = int(values["-YEAR-"])
                 cmap = choose_gradient(values["-HEATMAP_GRADIENT-"])
                 color_sunburst = choose_color(values["-SUNBURST_COLOR-"])
