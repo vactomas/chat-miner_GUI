@@ -26,6 +26,7 @@ def make_window(theme):
                     "Facebook Messenger",
                     "Signal",
                     "WhatsApp",
+                    "Instagram",
                 ],
                 s=(20, 2),
                 default_value="Telegram - JSON",

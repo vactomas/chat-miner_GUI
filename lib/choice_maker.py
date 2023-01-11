@@ -4,6 +4,7 @@ from chatminer.chatminer.chatparsers import (
     FacebookMessengerParser,
     SignalParser,
     WhatsAppParser,
+    InstagramJsonParser,
 )
 
 
@@ -28,6 +29,9 @@ def choose_parser(
 
         case "WhatsApp":
             parser = WhatsAppParser(file)
+
+        case "Instagram":
+            parser = InstagramJsonParser(file)
 
     return parser
 

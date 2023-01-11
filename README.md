@@ -21,7 +21,7 @@ After running the executable, this window will appear.
 </p>
 
 Here you can choose:
-- the export type
+- the chat export type
 - which year should be used for data extraction
 - which graphs should be plotted
 - the chat export file itself
