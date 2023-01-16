@@ -47,8 +47,6 @@ def make_window(theme):
                 default=True,
                 key="-SUNBURST-",
             ),
-        ],
-        [
             sg.Checkbox(
                 "Wordcloud",
                 default=False,
@@ -70,9 +68,20 @@ def make_window(theme):
         ],
     ]
 
-    colour_picker = [
+    colour_picker_text = [
         [
             sg.Text("Heatmap colour gradient:"),
+        ],
+        [
+            sg.Text("Sunburst graph colour:"),
+        ],
+        [
+            sg.Text("Radarchart graph colour:"),
+        ],
+    ]
+
+    colour_picker = [
+        [
             sg.OptionMenu(
                 [
                     "Greys",
@@ -101,7 +110,6 @@ def make_window(theme):
             ),
         ],
         [
-            sg.Text("Sunburst graph colour:   "),
             sg.OptionMenu(
                 [
                     "Blue",
@@ -121,7 +129,6 @@ def make_window(theme):
             ),
         ],
         [
-            sg.Text("Radarchart graph colour: "),
             sg.OptionMenu(
                 [
                     "Blue",
@@ -144,12 +151,12 @@ def make_window(theme):
 
     graph_file_name = [
         [
-            sg.Text("Graph file name:"),
-            sg.InputText(
+            sg.Column([[sg.Text("Graph file name:"),]]),
+            sg.Column([[sg.InputText(
                 key="-GRAPH_FILE_NAME-",
                 s=(15, 2),
                 default_text="export",
-            ),
+            ),]])
         ]
     ]
 
@@ -182,7 +189,10 @@ def make_window(theme):
         ],
         [graphs_to_plot],
         [file_select],
-        [colour_picker],
+        [
+            sg.Column(colour_picker_text),
+            sg.Column(colour_picker),
+        ],
         [graph_file_name],
         [
             sg.Column(start_the_process),
