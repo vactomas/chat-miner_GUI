@@ -22,7 +22,6 @@ def make_window(theme):
             sg.OptionMenu(
                 [
                     "Telegram - JSON",
-                    "Telegram - HTML",
                     "Facebook Messenger",
                     "Signal",
                     "WhatsApp",

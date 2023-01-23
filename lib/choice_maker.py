@@ -1,5 +1,4 @@
 from chatminer.chatminer.chatparsers import (
-    TelegramHtmlParser,
     TelegramJsonParser,
     FacebookMessengerParser,
     SignalParser,
@@ -17,9 +16,6 @@ def choose_parser(
 
         case "Telegram - JSON":
             parser = TelegramJsonParser(file)
-
-        case "Telegram - HTML":
-            parser = TelegramHtmlParser(file)
 
         case "Facebook Messenger":
             parser = FacebookMessengerParser(file)
